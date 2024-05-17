@@ -66,8 +66,8 @@ footer {
     margin-top: 10px;
 }
 
-#score, #game-over, #best-score {
-    font-size: 4vw; /* Responsive font size */
+#score, #best-score {
+    font-size: 3vw; /* Smaller font size */
     color: #ffffff;
     margin: 5px 0;
 }
@@ -112,7 +112,7 @@ footer {
     color: #ffffff;
     border: none;
     padding: 10px;
-    font-size: 5vw;
+    font-size: 5vw; /* Ensure uniform size */
     font-family: 'Press Start 2P', cursive;
     cursor: pointer;
     border-radius: 5px;
