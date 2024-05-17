@@ -79,7 +79,7 @@ footer {
 }
 
 #replay-button {
-    background-color: #ff6b6b;
+    background-color: #4CAF50; /* Green button */
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -91,14 +91,14 @@ footer {
 }
 
 #replay-button:hover {
-    background-color: #ff4d4d;
+    background-color: #45a049;
 }
 
 #controls {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-bottom: 20px; /* Move controls above the game */
 }
 
 .control-row {
