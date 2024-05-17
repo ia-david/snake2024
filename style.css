@@ -80,7 +80,7 @@ footer {
 }
 
 #game-over {
-    font-size: 10vw; /* Responsive font size */
+    font-size: 5vw; /* Responsive font size */
     color: #ff4d4d;
     margin-top: 10px;
 }
