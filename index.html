@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNAKE 2024</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -24,6 +24,14 @@
             <button id="replay-button" style="display: none;" onclick="replayGame()">Rejouer</button>
             <p id="best-score">Meilleur score du jour: 0</p>
         </footer>
+        <div id="controls">
+            <button class="control-button" id="up-button">↑</button>
+            <div class="control-row">
+                <button class="control-button" id="left-button">←</button>
+                <button class="control-button" id="down-button">↓</button>
+                <button class="control-button" id="right-button">→</button>
+            </div>
+        </div>
     </div>
     <script src="p5.min.js"></script>
     <script src="game.js"></script>
