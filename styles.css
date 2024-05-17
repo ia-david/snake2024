@@ -18,25 +18,25 @@ body {
     border: 2px solid #333;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    width: 500px;
-    max-width: 90%;
+    padding: 10px;
+    width: 90vw;
+    max-width: 500px;
 }
 
 header {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #game-title {
-    font-size: 32px;
+    font-size: 8vw; /* Responsive font size */
     color: #ff6b6b;
     margin: 0;
 }
 
 #game-instructions {
-    font-size: 14px;
+    font-size: 3vw; /* Responsive font size */
     color: #b0b0b0;
-    margin: 10px 0 20px;
+    margin: 5px 0 10px;
 }
 
 main {
@@ -63,17 +63,17 @@ main {
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #score, #game-over, #best-score {
-    font-size: 20px;
+    font-size: 4vw; /* Responsive font size */
     color: #ffffff;
     margin: 5px 0;
 }
 
 #game-over {
-    font-size: 24px;
+    font-size: 5vw; /* Responsive font size */
     color: #ff4d4d;
     margin-top: 10px;
 }
@@ -83,7 +83,7 @@ footer {
     color: #ffffff;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 4vw; /* Responsive font size */
     font-family: 'Press Start 2P', cursive;
     cursor: pointer;
     border-radius: 5px;
@@ -92,4 +92,68 @@ footer {
 
 #replay-button:hover {
     background-color: #ff4d4d;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.control-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.control-button {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 5vw;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    width: 20vw;
+    max-width: 60px;
+    height: 20vw;
+    max-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-button:hover {
+    background-color: #ff4d4d;
+}
+
+@media (min-width: 600px) {
+    #game-title {
+        font-size: 32px;
+    }
+
+    #game-instructions {
+        font-size: 14px;
+    }
+
+    #score, #game-over, #best-score {
+        font-size: 20px;
+    }
+
+    #game-over {
+        font-size: 24px;
+    }
+
+    #replay-button {
+        font-size: 16px;
+    }
+
+    .control-button {
+        font-size: 24px;
+        width: 60px;
+        height: 60px;
+    }
 }
