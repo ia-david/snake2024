@@ -11,8 +11,16 @@
     <div id="container">
         <header>
             <h1 id="game-title">SNAKE 2024</h1>
-            <p id="game-instructions">Utilisez les flèches pour déplacer le personnage.</p>
+            <p id="game-instructions">Utilisez les flèches pour déplacer le serpent.</p>
         </header>
+        <div id="controls">
+            <button class="control-button" id="up-button">↑</button>
+            <div class="control-row">
+                <button class="control-button" id="left-button">←</button>
+                <button class="control-button" id="down-button">↓</button>
+                <button class="control-button" id="right-button">→</button>
+            </div>
+        </div>
         <main>
             <div id="game-canvas-container">
                 <div id="game-canvas"></div>
@@ -24,14 +32,6 @@
             <button id="replay-button" style="display: none;" onclick="replayGame()">Rejouer</button>
             <p id="best-score">Meilleur score du jour: 0</p>
         </footer>
-        <div id="controls">
-            <button class="control-button" id="up-button">↑</button>
-            <div class="control-row">
-                <button class="control-button" id="left-button">←</button>
-                <button class="control-button" id="down-button">↓</button>
-                <button class="control-button" id="right-button">→</button>
-            </div>
-        </div>
     </div>
     <script src="p5.min.js"></script>
     <script src="game.js"></script>
