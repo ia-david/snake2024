@@ -17,20 +17,20 @@ function setup() {
     updateScore();
     updateBestScore();
 
-    // Add touch event listeners for mobile controls
-    select('#up-button').mousePressed(() => {
+    // Add event listeners for mobile controls
+    document.getElementById('up-button').addEventListener('click', () => {
         if (player.ydir === 0) player.setDir(0, -1);
     });
 
-    select('#down-button').mousePressed(() => {
+    document.getElementById('down-button').addEventListener('click', () => {
         if (player.ydir === 0) player.setDir(0, 1);
     });
 
-    select('#left-button').mousePressed(() => {
+    document.getElementById('left-button').addEventListener('click', () => {
         if (player.xdir === 0) player.setDir(-1, 0);
     });
 
-    select('#right-button').mousePressed(() => {
+    document.getElementById('right-button').addEventListener('click', () => {
         if (player.xdir === 0) player.setDir(1, 0);
     });
 }
