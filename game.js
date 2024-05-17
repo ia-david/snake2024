@@ -123,7 +123,7 @@ class Player {
 
     show() {
         for (let i = 0; i < this.body.length; i++) {
-            fill('#3498db');
+            fill('#4CAF50'); // Change the color to green
             noStroke();
             rect(this.body[i].x * gridSize, this.body[i].y * gridSize, gridSize, gridSize);
         }
@@ -151,7 +151,7 @@ class Player {
 }
 
 function updateScore() {
-    document.getElementById('score').innerText = `⭐ Score: ${score}`;
+    document.getElementById('score').innerText = `⭐ Score actuel: ${score}`;
 }
 
 function updateBestScore() {
